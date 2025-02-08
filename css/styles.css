@@ -4,15 +4,50 @@ body {
     background-color: #FFFFFF;
 }
 
+/* reset */
+
 ul {
-    list-style-type: none;}
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+/* common style */
+
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* header style */
+
 .header-design {
-    background-color: #ffffff;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -25,6 +60,11 @@ a {
     color: #4d5ae5;
 }
 
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
 .logo-modificate {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -32,11 +72,25 @@ a {
     color: #2e2f42;
 }
 
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .nav-link .link {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+
 }
 
 .nav-link .link:hover, .nav-link .link:focus {
@@ -51,9 +105,18 @@ a {
 
 .address-design {
     font-style: normal;
+    margin-left: auto;
+}
+
+.address-link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .address-link .contacts {
+    display: block;
+    padding: 24px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -63,8 +126,16 @@ a {
     color: #404bbf;
 }
 
+/* main-section style */
+
 .main-section {
     background-color: #2e2f42;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .main-title {
@@ -74,6 +145,9 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
+    align-items: center;
+    padding-top: 188px;
+    max-width: 496px;
 }
 
 .action-button {
@@ -84,11 +158,18 @@ a {
     letter-spacing: 0.04em;
     background-color: #4d5ae5;
     cursor:pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-top: 48px;
+    margin-bottom: 188px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .action-button:hover, .action-button:focus {
     background-color: #404bbf;
 }
+
+/* advantage section style */
 
 .second-title {
     font-weight: 700;
@@ -100,18 +181,27 @@ a {
     text-transform: capitalize;
 }
 
+.advantage-list {
+    display: flex;
+    width: calc((100%-72px)/4);
+    gap: 24px;
+}
+
 .advantage-section .advantage-section-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-bottom: 8px;
 }
 
 .main-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* team section style */
 
 .team-section {
     background-color: #f4f4fd;
@@ -121,16 +211,57 @@ a {
     text-transform: capitalize;
 }
 
+.second-title {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    width: calc((100%-72px)/4);
+}
+
 .team-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-windows {
     background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-img {
+    margin-bottom: 32px;
+}
+
+.team-txt {
+    margin-bottom: 32px;
+}
+
+/* portfolio style */
+
+.portfolio-container {
+    align-items: center;
+}
+
+.portfolio-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: calc((100%-72px)/3);
+}
+
+.portfolio-border {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
 
 .product-name {
@@ -139,10 +270,26 @@ a {
     line-height: 1.2;
     color: #2e2f42;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    padding-top: 32px;
 }
+
+.product-txt {
+    margin-bottom: 32px;
+    margin-left: 16px;
+}
+
+/* footer style */
 
 .footer-design {
     background-color: #2e2f42;
+}
+
+.foot-logo {
+    display: block;
+    padding-top: 100px;
+    margin-bottom: 16px;
 }
 
 .footer-logo {
@@ -159,4 +306,6 @@ a {
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 100px;
+    max-width: 264px;
 }
