@@ -183,7 +183,7 @@ img {
 
 .advantage-list {
     display: flex;
-    width: calc((100%-72px)/4);
+    width: calc((100% - 72px) / 4);
     gap: 24px;
 }
 
@@ -218,7 +218,7 @@ img {
 .team-list {
     display: flex;
     gap: 24px;
-    width: calc((100%-72px)/4);
+    width: calc((100% - 72px) / 4);
 }
 
 .team-name {
@@ -255,7 +255,7 @@ img {
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
-    width: calc((100%-72px)/3);
+    width: calc((100% - 72px) / 3);
 }
 
 .portfolio-border {
