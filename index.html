@@ -6,8 +6,8 @@
     <title>WEBSTUDIO-Effective Solutions for Your Business</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -63,7 +63,7 @@
       </section>
       <section class="advantage-section section">
         <div class="container advantage-conteiner">
-          <h2 hidden class="second-title">HIDE</h2>
+          <h2 hidden class="second-title visually-hidden">HIDE</h2>
           <ul class="advantage-list">
             <li class="advantage-list-item">
               <h3 class="advantage-section-title">Strategy</h3>
@@ -108,8 +108,10 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-name">Mark Guerrero</h3>
-              <p class="main-text team-txt">Product Designer</p>
+              <div class="teammate">
+                <h3 class="team-name">Mark Guerrero</h3>
+                <p class="main-text team-txt">Product Designer</p>
+              </div>
             </li>
             <li class="team-windows">
               <img
@@ -119,8 +121,10 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-name">Tom Ford</h3>
-              <p class="main-text team-txt">Frontend Developer</p>
+              <div class="teammate">
+                <h3 class="team-name">Tom Ford</h3>
+                <p class="main-text team-txt">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-windows">
               <img
@@ -130,8 +134,10 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-name">Camila Garcia</h3>
-              <p class="main-text team-txt">Marketing</p>
+              <div class="teammate">
+                <h3 class="team-name">Camila Garcia</h3>
+                <p class="main-text team-txt">Marketing</p>
+              </div>
             </li>
             <li class="team-windows">
               <img
@@ -141,8 +147,10 @@
                 height="260"
                 class="team-img"
               />
-              <h3 class="team-name">Daniel Wilson</h3>
-              <p class="main-text team-txt">UI Designer</p>
+              <div class="teammate">
+                <h3 class="team-name">Daniel Wilson</h3>
+                <p class="main-text team-txt">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -158,10 +166,10 @@
                 height="300"
                 width="360"
               />
-              <ul class="portfolio-border">
-                <li><h3 class="product-name">Banking App</h3></li>
-                <li><p class="main-text product-txt">App</p></li>
-              </ul>
+              <div class="container portfolio-app">
+                <h3 class="product-name">Banking App</h3>
+                <p class="main-text product-txt">App</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img
@@ -170,10 +178,10 @@
                 height="300"
                 width="360"
               />
-              <ul class="portfolio-border">
-                <li><h3 class="product-name">Cashless Payment</h3></li>
-                <li><p class="main-text product-txt">Marketing</p></li>
-              </ul>
+              <div class="container portfolio-app">
+                <h3 class="product-name">Cashless Payment</h3>
+                <p class="main-text product-txt">Marketing</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img
@@ -182,10 +190,10 @@
                 height="300"
                 width="360"
               />
-              <ul class="portfolio-border">
-                <li><h3 class="product-name">Meditation App</h3></li>
-                <li><p class="main-text product-txt">App</p></li>
-              </ul>
+              <div class="container portfolio-app">
+                <h3 class="product-name">Meditation App</h3>
+                <p class="main-text product-txt">App</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img
@@ -194,10 +202,10 @@
                 height="300"
                 width="360"
               />
-              <ul class="portfolio-border">
-                <li><h3 class="product-name">Taxi Service</h3></li>
-                <li><p class="main-text product-txt">Marketing</p></li>
-              </ul>
+              <div class="container portfolio-app">
+                <h3 class="product-name">Taxi Service</h3>
+                <p class="main-text product-txt">Marketing</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img
@@ -206,10 +214,10 @@
                 height="300"
                 width="360"
               />
-              <ul class="portfolio-border">
-                <li><h3 class="product-name">Screen Illustrations</h3></li>
-                <li><p class="main-text product-txt">Design</p></li>
-              </ul>
+              <div class="container portfolio-app">
+                <h3 class="product-name">Screen Illustrations</h3>
+                <p class="main-text product-txt">Design</p>
+              </div>
             </li>
             <li class="portfolio-list-item">
               <img
@@ -218,10 +226,10 @@
                 height="300"
                 width="360"
               />
-              <ul class="portfolio-border">
-                <li><h3 class="product-name">Online Courses</h3></li>
-                <li><p class="main-text product-txt">Marketing</p></li>
-              </ul>
+              <div class="container portfolio-app">
+                <h3 class="product-name">Online Courses</h3>
+                <p class="main-text product-txt">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
